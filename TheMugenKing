@@ -1,0 +1,345 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Lunar Shadow",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Loading Adopt Me",
+   LoadingSubtitle = "by MugenKing",
+   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+Rayfield:Notify({
+   Title = "Welcome",
+   Content = "Hi",
+   Duration = 6.5,
+   Image = 4483362458,
+})
+
+local Tab = Window:CreateTab("White Door in front of car", "rewind")
+local Section = Tab:CreateSection("This is good for those who just joined and immediately Teleport")
+
+local Button = Tab:CreateButton({
+   Name = "Teleport White Door",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+hrp.CFrame = CFrame.new(5992.9702, 6528.9228 + 5, 12073.5488)
+   end,
+})
+
+local Tab = Window:CreateTab("White Door outside", "rewind")
+local Section = Tab:CreateSection("you should be at the outer white door")
+local Section = Tab:CreateSection("Once you are in the white door outside, you can Teleport to Anything like Shop And More")
+
+local Button = Tab:CreateButton({
+   Name = "Teleport White Door Outside",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-255.0962, 30.2407 + 5, -1829.3873)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Coffee Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-274.74, 30.14 + 5, -1768.51)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Ice Cream Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-221.1, 32.1 + 5, -1772.0)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Pizza Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-124.1, 30.2 + 5, -1662.8)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Salon Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-131.6, 30.2 + 5, -1762.9)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Javier Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-83.7, 30.1 + 5, -1710.7)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Car Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-50.4, 30.5 + 5, -1756.0)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Secret Door",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-254.3, 28.4 + 5, -1649.6)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Playground",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-361.6, 30.3 + 5, -1731.0)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Baby Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-465.0, 30.3 + 5, -1669.7)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Beach Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-551.1, 29.8 + 5, -1485.1)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Adopt Pets",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-247.6, 30.6 + 5, -1481.6)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Pets Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-190.1, 30.6 + 5, -1509.9)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport hospital",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-187.5, 30.4 + 5, -1439.8)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Boats",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-283.1, 36.9 + 5, -1405.9)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Abc And School",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-308.3, 30.4 + 5, -1504.4)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Redeem Code",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-498.2, 30.3 + 5, -1201.7)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Supermarket",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-393.1, 30.2 + 5, -1202.9)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Camping",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-31.4, 30.2 + 5, -1064.5)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Best Shop eve",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-62.7, 31.8 + 5, -1186.9)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Air balloon",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-207.0, 40.3 + 5, -1582.6)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Potion Shop",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-231.2, 354.5 + 5, -1346.3)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport Obbies",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+
+-- Teleport langsung
+hrp.CFrame = CFrame.new(-462.6, 32.0 + 5, -1819.9)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Free Gamepass Pet",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/IzkhGjos/raw",true))()
+   end,
+})
+
+Rayfield:LoadConfiguration()
