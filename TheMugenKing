@@ -51,7 +51,7 @@ local Button = Tab:CreateButton({
 local char = player.Character or player.CharacterAdded:Wait()
 local hrp = char:WaitForChild("HumanoidRootPart")
 
-hrp.CFrame = CFrame.new(5992.9702, 6528.9228 + 5, 12073.5488)
+hrp.CFrame = CFrame.new(8991.9, 6529.4 + 5, 12073.1)
    end,
 })
 
